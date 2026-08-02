@@ -173,11 +173,24 @@ margin-top:40px;
 
 .card{
     background:#161B22;
+    border:1px solid #2b3137;
     border-radius:18px;
     padding:30px;
     text-align:center;
-    transition:0.3s;
-    border:1px solid #2c313a;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    min-height:380px;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(0,255,136,.35);
 }
 
 .card:hover{
@@ -189,9 +202,9 @@ margin-top:40px;
     width:120px;
     height:120px;
     object-fit:contain;
-    margin-bottom:20px;
+    display:block;
+    margin:0 auto 20px;
 }
-
 .status{
     color:#00ff88;
     font-weight:600;
@@ -200,16 +213,14 @@ margin-top:40px;
 
 .verify-btn{
     display:inline-block;
-    margin-top:15px;
-    padding:12px 25px;
-    border-radius:30px;
+    margin-top:20px;
+    padding:10px 24px;
     background:#00ff88;
     color:#000;
     text-decoration:none;
+    border-radius:30px;
     font-weight:600;
-    transition:.3s;
 }
-
 .verify-btn:hover{
     background:white;
     transform:scale(1.05);
