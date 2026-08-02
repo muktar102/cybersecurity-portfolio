@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0D1117;
+    color:white;
+}
+
+header{
+    background:#161B22;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    color:#00ff88;
+}
+
+p{
+    font-size:20px;
+}
