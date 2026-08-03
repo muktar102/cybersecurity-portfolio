@@ -21,7 +21,7 @@ const achievements = [
 {
     title: "Your white belt training begins",
     module: "Introduction to Active Directory",
-    image: "images/ActiveDirectory.png",
+    image: "images/ActiveDirectoryy.png",
     link: "#"
 },
 
