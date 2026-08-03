@@ -12,8 +12,8 @@ const achievements = [
 },
     
 {
-    title: "Playing with the Mess",
-    module: "JavaScript Deobfuscation",
+    title: "Playing ",
+    module: "JavaScript D",
     image: "images/JavaScript.png",
     link: "#"
 },
