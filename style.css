@@ -320,10 +320,12 @@ color:#888;
 }
 
 #achievement-container{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,auto);
     gap:25px;
+    width:100%;
 }
-
 .achievement-card{
     width:280px;
     background:#161B22;
