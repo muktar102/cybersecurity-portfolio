@@ -1,292 +1,284 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0D1117;
+color:#F5F5F5;
+line-height:1.7;
+}
+
+/* Navigation */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#161B22;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
 
-<head>
+.logo{
+font-size:28px;
+font-weight:700;
+color:#00ff88;
+}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
 
-<title>Ahmed Muhumed | Cybersecurity Portfolio</title>
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
 
-<link rel="stylesheet" href="style.css">
+nav a:hover{
+color:#00ff88;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* Hero */
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#0D1117,#161B22);
+}
 
-</head>
+.hero h1{
+font-size:58px;
+color:#00ff88;
+margin-bottom:15px;
+}
 
-<body>
+.hero h2{
+font-size:32px;
+margin-bottom:20px;
+}
 
-<nav>
+.hero p{
+font-size:20px;
+color:#b5b5b5;
+margin-bottom:35px;
+}
 
-<div class="logo">
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
 
-Ahmed Muhumed
+.btn{
 
-</div>
+background:#00ff88;
 
-<ul>
+color:black;
 
-<li><a href="#about">About</a></li>
+padding:15px 35px;
 
-<li><a href="#skills">Skills</a></li>
+border-radius:40px;
 
-<li><a href="#certifications">Certifications</a></li>
+text-decoration:none;
 
-<li><a href="#projects">Projects</a></li>
+font-weight:bold;
 
-<li><a href="#contact">Contact</a></li>
+transition:.3s;
 
-</ul>
+}
 
-</nav>
+.btn:hover{
 
-<section class="hero">
+transform:translateY(-3px);
 
-<div class="hero-content">
+box-shadow:0 0 20px #00ff88;
 
-<h1>Hello, I'm Ahmed Muhumed</h1>
+}
 
-<h2>Cybersecurity Analyst</h2>
+.btn-outline{
 
-<p>
+border:2px solid #00ff88;
 
-Network Security • IT Support • SOC • Digital Forensics
+padding:15px 35px;
 
-</p>
+border-radius:40px;
 
-<div class="buttons">
+text-decoration:none;
 
-<a href="#projects" class="btn">View Projects</a>
+color:#00ff88;
 
-<a href="resume/Ahmed_Muhumed_Resume.pdf" class="btn-outline">
+font-weight:bold;
 
-Download Resume
+transition:.3s;
 
-</a>
+}
 
-</div>
+.btn-outline:hover{
 
-</div>
+background:#00ff88;
 
-</section>
+color:black;
 
-<section id="about">
+}
 
-<h2>About Me</h2>
+/* Sections */
 
-<p>
+section{
 
-I'm an aspiring Cybersecurity Analyst passionate about
-Blue Team operations, Network Security, Digital Forensics,
-Threat Hunting, and Incident Response.
+padding:80px 10%;
 
-I continuously build hands-on skills through Hack The Box,
-security labs, and real-world cybersecurity projects.
+}
 
-</p>
+section h2{
 
-</section>
+font-size:38px;
 
-<section id="skills">
+color:#00ff88;
 
-<h2>Technical Skills</h2>
+margin-bottom:30px;
 
-<div class="cards">
+text-align:center;
 
-<div class="card">
+}
 
-<h3>Security</h3>
+/* Cards */
 
-<ul>
+.cards{
 
-<li>Threat Hunting</li>
+display:grid;
 
-<li>Incident Response</li>
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-<li>Digital Forensics</li>
+gap:30px;
 
-<li>SIEM</li>
+margin-top:40px;
 
-</ul>
+}
 
-</div>
+.card{
 
-<div class="card">
+background:#161B22;
 
-<h3>Networking</h3>
+padding:30px;
 
-<ul>
+border-radius:15px;
 
-<li>TCP/IP</li>
+transition:.3s;
 
-<li>DNS</li>
+border:1px solid #24292f;
 
-<li>DHCP</li>
+}
 
-<li>VPN</li>
+.card:hover{
 
-<li>Routing</li>
+transform:translateY(-8px);
 
-</ul>
+box-shadow:0 0 20px rgba(0,255,136,.3);
 
-</div>
+}
 
-<div class="card">
+.card h3{
 
-<h3>Tools</h3>
+color:#00ff88;
 
-<ul>
+margin-bottom:15px;
 
-<li>Splunk</li>
+}
 
-<li>Wireshark</li>
+.card ul{
 
-<li>Velociraptor</li>
+padding-left:20px;
 
-<li>YARA</li>
+}
 
-<li>Sigma</li>
+.card li{
 
-<li>Suricata</li>
+margin:10px 0;
 
-</ul>
+}
 
-</div>
+/* Contact */
 
-</div>
+#contact{
 
-</section>
+text-align:center;
 
-<section id="certifications">
+}
 
-<h2>Professional Certifications</h2>
+#contact p{
 
-<div class="cert-grid">
-<div class="cert-card">
-<img src="images/securityplus.png" alt="CompTIA Security+">
-<h3>CompTIA Security+</h3>
-<p class="status">✔ Earned</p>
-<a href="https://www.credly.com/badges/95673ff6-2b58-4f44-bf0e-641dcd2dad6f/linked_in_profile"
-target="_blank"
-class="verify-btn">
-Verify Credential
-</a>
-</div>
+margin:15px 0;
 
-<div class="cert-card">
-<img src="images/sscp.png" alt="ISC2 SSCP">
-<h3> ISC2 SSCP </h3>
-<p class="status">✔ Earned</p>
-<a href="https://www.credly.com/badges/3821956b-80ee-498b-8e2a-d74a64136c03/linked_in_profile"
-target="_blank"
-class="verify-btn">
-Verify Credential
-</a>
-</div>
+}
 
-<div class="cert-card">
-<img src="images/cc.png" alt="ISC2 Certified in Cybersecurity">
-<h3>ISC2 Certified in Cybersecurity (CC)</h3>
-<p class="status">✔ Earned</p>
-<a href="https://www.credly.com/badges/833cb648-ff0b-4007-ba3b-a8b5bf731583/linked_in_profile"
-target="_blank"
-class="verify-btn">
-Verify Credential
-</a>
-</div>
+/* Footer */
 
-<div class="cert-card">
-<img src="images/azure.png" alt="Microsoft Azure Fundamentals";>
-<h3>Microsoft Certified: Azure Fundamentals</h3>
-<p class="status">✔ Earned</p>
-<a href="https://learn.microsoft.com/en-us/users/ahmedmuktarmuhumed-4248/credentials/554fcc193f8b1c89?ref=https%3A%2F%2Fwww.linkedin.com%2F"
-target="_blank"
-class="verify-btn">
+footer{
 
-Verify Credential
+background:#161B22;
 
-</a>
-</div>
-</div>
-</section>
+padding:25px;
 
-<section id="projects">
+text-align:center;
 
-<h2>Featured Projects</h2>
+margin-top:40px;
 
-<div class="cards">
+color:#888;
 
-<div class="card">
+}
 
-<h3>Hack The Box Academy</h3>
+/* Responsive */
 
-<p>
+@media(max-width:768px){
 
-Windows Event Logs • SIEM Fundamentals •
-Incident Reporting • Network Traffic Analysis
+nav{
 
-</p>
+flex-direction:column;
 
-</div>
+}
 
-<div class="card">
+nav ul{
 
-<h3>Digital Forensics</h3>
+margin-top:20px;
 
-<p>
+flex-wrap:wrap;
 
-Velociraptor investigations, Windows artifacts,
-memory analysis and threat hunting.
+justify-content:center;
 
-</p>
+}
 
-</div>
+.hero h1{
 
-<div class="card">
+font-size:40px;
 
-<h3>Detection Engineering</h3>
+}
 
-<p>
+.hero h2{
 
-YARA • Sigma • Suricata
+font-size:24px;
 
-</p>
+}
 
-</div>
+.hero p{
 
-</div>
+font-size:18px;
 
-</section>
+}
 
-<section id="contact">
-
-<h2>Let's Connect</h2>
-
-<p>Email: your@email.com</p>
-
-<p>
-
-GitHub |
-LinkedIn |
-Hack The Box
-
-</p>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Ahmed Muhumed
-
-</p>
-
-</footer>
-
-</body>
-
-</html>
+}
