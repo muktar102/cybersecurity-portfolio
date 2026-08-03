@@ -14,14 +14,14 @@ const achievements = [
 {
     title: "Lurk in the packets",
     module: "Intro to Network Traffic Analysis",
-    image: "images/ActiveDirectory.png",
+    image: "images/NetworkTrafficAnalysis.png",
     link: "#"
 },
 
 {
     title: "Your white belt training begins",
     module: "Introduction to Active Directory",
-    image: "images/NetworkTrafficAnalysis.png",
+    image: "images/ActiveDirectory.png",
     link: "#"
 },
 
