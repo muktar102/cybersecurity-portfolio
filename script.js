@@ -86,70 +86,71 @@ const achievements = [
     module: "YARA & Sigma",
     image: "images/YARA&Sigma.png",
     link: "#"
-},
-
-{
-    title: "Incident Handler",
-    module: "Incident Handling Process",
-    image: "images/IncidentHandling.png",
-    link: "#"
 }
 
 ];
 
-const container = document.getElementById("achievement-container");
-
 let currentIndex = 0;
 const visibleCards = 6;
+
+const container = document.getElementById("achievement-container");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
 
 function renderCards(){
 
     container.innerHTML = "";
 
     achievements
-    .slice(currentIndex, currentIndex + visibleCards)
-    .forEach(item=>{
+        .slice(currentIndex, currentIndex + visibleCards)
+        .forEach(item => {
 
-        container.innerHTML += `
-        <div class="achievement-card">
+            container.innerHTML += `
+                <div class="achievement-card">
 
-            <img src="${item.image}" alt="${item.title}">
+                    <img src="${item.image}" alt="${item.title}">
 
-            <h3>${item.title}</h3>
+                    <h3>${item.title}</h3>
 
-            <p>${item.module}</p>
+                    <p>${item.module}</p>
 
-            <a href="${item.link}" target="_blank" class="verify-btn">
-                View Badge
-            </a>
+                    <a href="${item.link}" target="_blank">
+                        View Badge
+                    </a>
 
-        </div>
-        `;
+                </div>
+            `;
 
-    });
+        });
+
+    prevBtn.disabled = currentIndex === 0;
+
+    nextBtn.disabled = currentIndex + visibleCards >= achievements.length;
 
 }
 
-renderCards();
+nextBtn.addEventListener("click", () => {
 
-document.getElementById("next").addEventListener("click", () => {
-
-    if (currentIndex + visibleCards < achievements.length) {
+    if(currentIndex + visibleCards < achievements.length){
 
         currentIndex += visibleCards;
+
         renderCards();
 
     }
 
 });
 
-document.getElementById("prev").addEventListener("click", () => {
+prevBtn.addEventListener("click", () => {
 
-    if (currentIndex >= visibleCards) {
+    if(currentIndex > 0){
 
         currentIndex -= visibleCards;
+
         renderCards();
 
     }
 
 });
+
+renderCards();
