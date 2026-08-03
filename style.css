@@ -347,74 +347,51 @@ color:#888;
     border:1px solid #2b3137;
     border-radius:18px;
 
-    width:300px;
-    min-height:320px;
+    width:250px;          /* was around 300px */
+    min-height:320px;     /* was around 380px */
 
-    padding:20px;
+    padding:22px;
 
     text-align:center;
-
-    transition:.3s;
 
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
 
+    transition:.3s;
 }
 
 .achievement-card:hover{
-
-    transform:translateY(-8px);
-
+    transform:translateY(-6px);
     box-shadow:0 0 20px rgba(0,255,136,.35);
-
 }
 
 .achievement-card img{
-
     width:110px;
     height:110px;
     object-fit:contain;
-
-    margin-bottom:15px;
-
 }
 
 .achievement-card h3{
-
-    color:#fff;
-    font-size:1.6rem;
-    margin:10px 0;
-
+    font-size:18px;
+    margin:12px 0 8px;
 }
 
 .achievement-card p{
-
-    color:#bdbdbd;
     font-size:15px;
+    color:#b8b8b8;
     line-height:1.4;
-
-    margin-bottom:20px;
-
 }
 
 .achievement-card a{
-
-    display:inline-block;
-
+    margin-top:18px;
     padding:10px 24px;
-
-    background:#00ff88;
-
-    color:#000;
-
-    text-decoration:none;
-
     border-radius:30px;
-
+    background:#00ff88;
+    color:#000;
+    text-decoration:none;
     font-weight:700;
-
 }
 
 .achievement-card a:hover{
