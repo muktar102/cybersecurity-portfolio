@@ -132,9 +132,9 @@ function renderCards() {
 
                 <img src="${badge.image}" alt="${badge.title}">
 
-                <h3>${badge.title}</h3>
+                <p>${badge.title}</p>
 
-                <p>${badge.module}</p>
+                <h3>${badge.module}</h3>
 
                 <a href="${badge.link}" target="_blank">
                     View Badge
