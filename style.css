@@ -334,11 +334,12 @@ color:#888;
 
 #achievement-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,250px);
     grid-template-rows:repeat(2,auto);
     gap:25px;
-    width:100%;
-    max-width:1100px;
+
+    justify-content:center;
+    align-content:center;
 }
 
 .achievement-card{
