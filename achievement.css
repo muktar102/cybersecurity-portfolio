@@ -37,81 +37,73 @@
 .achievement-card{
 
     background:#161B22;
-
     border:1px solid #2b3137;
-
     border-radius:18px;
 
-    padding:18px;
+    width:230px;
+    height:360px;
+
+    padding:20px;
 
     display:flex;
-
     flex-direction:column;
-
-    justify-content:space-between;
-
     align-items:center;
 
-    transition:.3s;
+    text-align:center;
 
+    transition:.3s;
 }
 
 .achievement-card:hover{
-
-    transform:translateY(-8px);
-
+    transform:translateY(-6px);
     box-shadow:0 0 20px rgba(0,255,136,.35);
-
 }
 
 .achievement-card img{
-
-    width:105px;
-
-    height:105px;
-
+    width:110px;
+    height:110px;
     object-fit:contain;
-
 }
 
 .achievement-card h3{
+    margin:15px 0 10px;
+    font-size:18px;
+    min-height:55px;
 
-    color:white;
-
-    font-size:17px;
-
-    margin:10px 0 6px;
-
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .achievement-card p{
-
-    color:#b7b7b7;
-
-    font-size:14px;
-
+    color:#b8b8b8;
     line-height:1.4;
+    min-height:55px;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .achievement-card a{
 
-    margin-top:15px;
+    margin-top:auto;
 
-    padding:10px 22px;
-
-    border-radius:30px;
+    display:inline-block;
 
     background:#00ff88;
+    color:#000;
 
-    color:black;
+    padding:12px 28px;
+    border-radius:30px;
 
     text-decoration:none;
-
-    font-weight:bold;
-
+    font-weight:700;
 }
 
+.achievement-card a:hover{
+    background:#fff;
+}
 .arrow-btn{
     width:55px;
     height:55px;
