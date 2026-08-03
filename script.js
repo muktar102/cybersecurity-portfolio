@@ -1,19 +1,12 @@
-// ===============================
+// ================================
 // Hack The Box Achievements
-// ===============================
+// ================================
 
 const achievements = [
 
 {
     title: "Playing with the Mess",
     module: "JavaScript Deobfuscation",
-    image: "images/JavaScript.png",
-    link: "#"
-},
-    
-{
-    title: "Playing ",
-    module: "JavaScript D",
     image: "images/JavaScript.png",
     link: "#"
 },
@@ -54,13 +47,6 @@ const achievements = [
 },
 
 {
-    title: "Chronicle Champion",
-    module: "Security Incident Reporting",
-    image: "images/SecurityIncidentReporting.png",
-    link: "#"
-},
-
-{
     title: "Threat Hunter",
     module: "Threat Hunting",
     image: "images/ThreatHunting.png",
@@ -96,91 +82,104 @@ const achievements = [
 },
 
 {
-    title: "Digital Forensics",
-    module: "Digital Forensics",
-    image: "images/DigitalForensics.png",
+    title: "Chronicle Champion",
+    module: "Security Incident Reporting",
+    image: "images/SecurityIncidentReporting.png",
     link: "#"
 },
 
 {
-    title: "Splunk Explorer",
-    module: "Splunk Basics",
-    image: "images/SplunkModule.png",
+    title: "Academician",
+    module: "Introduction to Academy",
+    image: "images/Academician.png",
     link: "#"
 },
 
 {
-    title: "IDS / IPS",
-    module: "IDS & IPS Fundamentals",
-    image: "images/IDS:IPSmodule.png",
+    title: "Active Directory",
+    module: "Active Directory",
+    image: "images/ActiveDirectory.png",
     link: "#"
-},
+}
 
-{
-    title: "Detection Engineering",
-    module: "YARA & Sigma",
-    image: "images/YARA&Sigma.png",
-    link: "#"
-},
 ];
 
-let currentIndex = 0;
-const visibleCards = 6;
+// ================================
+// Carousel
+// ================================
 
 const container = document.getElementById("achievement-container");
-const nextBtn = document.getElementById("next");
-const prevBtn = document.getElementById("prev");
 
-function renderCards() {
+const visibleCards = 6;
+
+let currentIndex = 0;
+
+function renderCards(){
 
     container.innerHTML = "";
 
-    const cards = achievements.slice(currentIndex, currentIndex + visibleCards);
+    const cards = achievements.slice(
+        currentIndex,
+        currentIndex + visibleCards
+    );
 
     cards.forEach(item => {
 
         container.innerHTML += `
-            <div class="achievement-card">
-                <img src="${item.image}" alt="${item.title}">
-                <h3>${item.title}</h3>
-                <p>${item.module}</p>
-                <a href="${item.link}" target="_blank">View Badge</a>
-            </div>
+        <div class="achievement-card">
+
+            <img src="${item.image}" alt="${item.title}">
+
+            <h3>${item.title}</h3>
+
+            <p>${item.module}</p>
+
+            <a href="${item.link}" target="_blank">
+                View Badge
+            </a>
+
+        </div>
         `;
 
     });
 
 }
-    prevBtn.disabled = currentIndex === 0;
 
-    nextBtn.disabled = currentIndex + visibleCards >= achievements.length;
+renderCards();
 
-}
+// ================================
+// Next
+// ================================
 
 document.getElementById("next").addEventListener("click", () => {
 
     currentIndex += visibleCards;
 
-    if (currentIndex >= achievements.length) {
-        currentIndex = 0; // Back to first page
+    if(currentIndex >= achievements.length){
+
+        currentIndex = 0;
+
     }
 
     renderCards();
 
 });
+
+// ================================
+// Previous
+// ================================
 
 document.getElementById("prev").addEventListener("click", () => {
 
     currentIndex -= visibleCards;
 
-    if (currentIndex < 0) {
+    if(currentIndex < 0){
 
-        // Go to the last page automatically
-        currentIndex = Math.floor((achievements.length - 1) / visibleCards) * visibleCards;
+        currentIndex =
+        Math.floor((achievements.length - 1) / visibleCards) * visibleCards;
 
     }
 
     renderCards();
 
 });
-//renderCards();
