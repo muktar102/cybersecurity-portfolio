@@ -1,6 +1,6 @@
-// =============================
-// HTB ACHIEVEMENTS
-// =============================
+// ===============================
+// Hack The Box Achievements
+// ===============================
 
 const achievements = [
 
@@ -34,61 +34,78 @@ const achievements = [
 
 ];
 
+// ===============================
+// Carousel
+// ===============================
 
-
+const container = document.getElementById("achievement-container");
 
 let currentIndex = 0;
-
 const visibleCards = 3;
 
-function renderCards(){
+function renderCards() {
 
-container.innerHTML="";
+    if (!container) return;
 
-achievements
-.slice(currentIndex,currentIndex+visibleCards)
-.forEach(item=>{
+    container.innerHTML = "";
 
-container.innerHTML+=`
-<div class="achievement-card">
+    achievements
+        .slice(currentIndex, currentIndex + visibleCards)
+        .forEach(item => {
 
-<img src="${item.image}">
+            container.innerHTML += `
+                <div class="achievement-card">
 
-<h3>${item.title}</h3>
+                    <img src="${item.image}" alt="${item.title}">
 
-<p>${item.module}</p>
+                    <h3>${item.title}</h3>
 
-<a href="${item.link}" target="_blank">View Badge</a>
+                    <p>${item.module}</p>
 
-</div>
-`;
+                    <a href="${item.link}" target="_blank">
+                        View Badge
+                    </a>
 
-});
+                </div>
+            `;
+
+        });
 
 }
 
 renderCards();
 
-document.getElementById("next").onclick=()=>{
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
 
-if(currentIndex+visibleCards<achievements.length){
+if (nextBtn) {
 
-currentIndex++;
+    nextBtn.onclick = () => {
 
-renderCards();
+        if (currentIndex + visibleCards < achievements.length) {
 
-}
+            currentIndex++;
 
-}
+            renderCards();
 
-document.getElementById("prev").onclick=()=>{
+        }
 
-if(currentIndex>0){
-
-currentIndex--;
-
-renderCards();
+    };
 
 }
+
+if (prevBtn) {
+
+    prevBtn.onclick = () => {
+
+        if (currentIndex > 0) {
+
+            currentIndex--;
+
+            renderCards();
+
+        }
+
+    };
 
 }
