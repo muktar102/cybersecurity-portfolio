@@ -12,15 +12,15 @@ const achievements = [
 },
 
 {
-    title: "White Belt Training",
-    module: "Introduction to Active Directory",
+    title: "Lurk in the packets",
+    module: "Intro to Network Traffic Analysis",
     image: "images/ActiveDirectory.png",
     link: "#"
 },
 
 {
-    title: "Lurk in the Packets",
-    module: "Network Traffic Analysis",
+    title: "Your white belt training begins",
+    module: "Introduction to Active Directory",
     image: "images/NetworkTrafficAnalysis.png",
     link: "#"
 },
