@@ -15,14 +15,14 @@ const achievements = [
     title: "Lurk in the packets",
     module: "Intro to Network Traffic Analysis",
     image: "images/NetworkTrafficAnalysis.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/f26bd771-7591-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "Your white belt training begins",
     module: "Introduction to Active Directory",
     image: "images/ActiveDirectoryy.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/c9f7c384-69fb-11f1-82d1-bea50ffe6cb4"
 },
 
 {
