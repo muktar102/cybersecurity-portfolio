@@ -321,8 +321,7 @@ color:#888;
 
 #achievement-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(2,auto);
+    grid-template-columns:repeat(3, 1fr);
     gap:25px;
     width:100%;
 }
