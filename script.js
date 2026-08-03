@@ -10,6 +10,13 @@ const achievements = [
     image: "images/JavaScript.png",
     link: "#"
 },
+    
+{
+    title: "Playing with the Mess",
+    module: "JavaScript Deobfuscation",
+    image: "images/JavaScript.png",
+    link: "#"
+},
 
 {
     title: "White Belt Training",
