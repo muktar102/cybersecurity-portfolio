@@ -5,13 +5,6 @@
 const achievements = [
 
 {
-    title: "Academician",
-    module: "Introduction to Academy",
-    image: "images/Academician.png",
-    link: "#"
-},
-
-{
     title: "Playing with the Mess",
     module: "JavaScript Deobfuscation",
     image: "images/JavaScript.png",
