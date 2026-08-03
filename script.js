@@ -5,107 +5,160 @@
 const achievements = [
 
 {
+    title: "Academician",
+    module: "Introduction to Academy",
+    image: "images/Academician.png",
+    link: "#"
+},
+
+{
+    title: "Playing with the Mess",
+    module: "JavaScript Deobfuscation",
+    image: "images/JavaScript.png",
+    link: "#"
+},
+
+{
+    title: "White Belt Training",
+    module: "Introduction to Active Directory",
+    image: "images/ActiveDirectory.png",
+    link: "#"
+},
+
+{
+    title: "AD Security Captain",
+    module: "Windows Attacks & Defense",
+    image: "images/WindowsAttacks.png",
+    link: "#"
+},
+
+{
+    title: "Lurk in the Packets",
+    module: "Network Traffic Analysis",
+    image: "images/NetworkTrafficAnalysis.png",
+    link: "#"
+},
+
+{
     title: "Log Keeper",
     module: "Windows Event Logs & Finding Evil",
-    image: "images/logkeeper.png",
-    link: "https://academy.hackthebox.com/..."
-},
-
-{
-    title: "Chronicle Champion",
-    module: "Security Incident Reporting",
-    image: "images/chroniclechampion.png",
-    link: "https://academy.hackthebox.com/..."
-},
-
-{
-    title: "Network Traffic Analysis",
-    module: "Network Traffic Analysis",
-    image: "images/networktrafficanalysis.png",
-    link: "https://academy.hackthebox.com/..."
+    image: "images/WindowsEvent.png",
+    link: "#"
 },
 
 {
     title: "Security Monitoring",
     module: "Security Monitoring & SIEM Fundamentals",
-    image: "images/securitymonitoring.png",
-    link: "https://academy.hackthebox.com/..."
+    image: "images/SecurityMonitoring.png",
+    link: "#"
+},
+
+{
+    title: "Chronicle Champion",
+    module: "Security Incident Reporting",
+    image: "images/SecurityIncidentReporting.png",
+    link: "#"
+},
+
+{
+    title: "Threat Hunter",
+    module: "Threat Hunting",
+    image: "images/ThreatHunting.png",
+    link: "#"
+},
+
+{
+    title: "Digital Forensics",
+    module: "Digital Forensics",
+    image: "images/DigitalForensics.png",
+    link: "#"
+},
+
+{
+    title: "Splunk Explorer",
+    module: "Splunk Basics",
+    image: "images/SplunkModule.png",
+    link: "#"
+},
+
+{
+    title: "IDS / IPS",
+    module: "IDS & IPS Fundamentals",
+    image: "images/IDS:IPSmodule.png",
+    link: "#"
+},
+
+{
+    title: "Detection Engineering",
+    module: "YARA & Sigma",
+    image: "images/YARA&Sigma.png",
+    link: "#"
+},
+
+{
+    title: "Incident Handler",
+    module: "Incident Handling Process",
+    image: "images/IncidentHandling.png",
+    link: "#"
 }
 
 ];
-
-// ===============================
-// Carousel
-// ===============================
 
 const container = document.getElementById("achievement-container");
 
 let currentIndex = 0;
 const visibleCards = 3;
 
-function renderCards() {
-
-    if (!container) return;
+function renderCards(){
 
     container.innerHTML = "";
 
     achievements
-        .slice(currentIndex, currentIndex + visibleCards)
-        .forEach(item => {
+    .slice(currentIndex, currentIndex + visibleCards)
+    .forEach(item=>{
 
-            container.innerHTML += `
-                <div class="achievement-card">
+        container.innerHTML += `
+        <div class="achievement-card">
 
-                    <img src="${item.image}" alt="${item.title}">
+            <img src="${item.image}" alt="${item.title}">
 
-                    <h3>${item.title}</h3>
+            <h3>${item.title}</h3>
 
-                    <p>${item.module}</p>
+            <p>${item.module}</p>
 
-                    <a href="${item.link}" target="_blank">
-                        View Badge
-                    </a>
+            <a href="${item.link}" target="_blank" class="verify-btn">
+                View Badge
+            </a>
 
-                </div>
-            `;
+        </div>
+        `;
 
-        });
+    });
 
 }
 
 renderCards();
 
-const nextBtn = document.getElementById("next");
-const prevBtn = document.getElementById("prev");
+document.getElementById("next").addEventListener("click",()=>{
 
-if (nextBtn) {
+    if(currentIndex < achievements.length - visibleCards){
 
-    nextBtn.onclick = () => {
+        currentIndex++;
 
-        if (currentIndex + visibleCards < achievements.length) {
+        renderCards();
 
-            currentIndex++;
+    }
 
-            renderCards();
+});
 
-        }
+document.getElementById("prev").addEventListener("click",()=>{
 
-    };
+    if(currentIndex > 0){
 
-}
+        currentIndex--;
 
-if (prevBtn) {
+        renderCards();
 
-    prevBtn.onclick = () => {
+    }
 
-        if (currentIndex > 0) {
-
-            currentIndex--;
-
-            renderCards();
-
-        }
-
-    };
-
-}
+});
