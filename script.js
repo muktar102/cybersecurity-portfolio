@@ -100,7 +100,7 @@ const achievements = [
 const container = document.getElementById("achievement-container");
 
 let currentIndex = 0;
-const visibleCards = 3;
+const visibleCards = 6;
 
 function renderCards(){
 
@@ -132,24 +132,22 @@ function renderCards(){
 
 renderCards();
 
-document.getElementById("next").addEventListener("click",()=>{
+document.getElementById("next").addEventListener("click", () => {
 
-    if(currentIndex < achievements.length - visibleCards){
+    if (currentIndex + visibleCards < achievements.length) {
 
-        currentIndex++;
-
+        currentIndex += visibleCards;
         renderCards();
 
     }
 
 });
 
-document.getElementById("prev").addEventListener("click",()=>{
+document.getElementById("prev").addEventListener("click", () => {
 
-    if(currentIndex > 0){
+    if (currentIndex >= visibleCards) {
 
-        currentIndex--;
-
+        currentIndex -= visibleCards;
         renderCards();
 
     }
