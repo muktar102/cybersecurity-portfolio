@@ -8,7 +8,7 @@ const achievements = [
     title: "Playing with the Mess",
     module: "JavaScript Deobfuscation",
     image: "images/JavaScript.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/9b91361c-6f66-11f1-82d1-bea50ffe6cb4"
 },
 
 {
