@@ -93,8 +93,35 @@ const achievements = [
     module: "YARA & Sigma",
     image: "images/YARA&Sigma.png",
     link: "#"
-}
+},
 
+{
+    title: "Digital Forensics",
+    module: "Digital Forensics",
+    image: "images/DigitalForensics.png",
+    link: "#"
+},
+
+{
+    title: "Splunk Explorer",
+    module: "Splunk Basics",
+    image: "images/SplunkModule.png",
+    link: "#"
+},
+
+{
+    title: "IDS / IPS",
+    module: "IDS & IPS Fundamentals",
+    image: "images/IDS:IPSmodule.png",
+    link: "#"
+},
+
+{
+    title: "Detection Engineering",
+    module: "YARA & Sigma",
+    image: "images/YARA&Sigma.png",
+    link: "#"
+},
 ];
 
 let currentIndex = 0;
