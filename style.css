@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahmed Muhumed | Cybersecurity Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+Ahmed Muhumed
+
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#certifications">Certifications</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Hello, I'm Ahmed Muhumed</h1>
+
+<h2>Cybersecurity Analyst</h2>
+
+<p>
+
+Network Security • IT Support • SOC • Digital Forensics
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="resume/Ahmed_Muhumed_Resume.pdf" class="btn-outline">
+
+Download Resume
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I'm an aspiring Cybersecurity Analyst passionate about
+Blue Team operations, Network Security, Digital Forensics,
+Threat Hunting, and Incident Response.
+
+I continuously build hands-on skills through Hack The Box,
+security labs, and real-world cybersecurity projects.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Security</h3>
+
+<ul>
+
+<li>Threat Hunting</li>
+
+<li>Incident Response</li>
+
+<li>Digital Forensics</li>
+
+<li>SIEM</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Networking</h3>
+
+<ul>
+
+<li>TCP/IP</li>
+
+<li>DNS</li>
+
+<li>DHCP</li>
+
+<li>VPN</li>
+
+<li>Routing</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Tools</h3>
+
+<ul>
+
+<li>Splunk</li>
+
+<li>Wireshark</li>
+
+<li>Velociraptor</li>
+
+<li>YARA</li>
+
+<li>Sigma</li>
+
+<li>Suricata</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2>Certifications</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>CompTIA Security+</h3>
+
+</div>
+
+<div class="card">
+
+<h3>ISC2 SSCP</h3>
+
+</div>
+
+<div class="card">
+
+<h3>ISC2 Certified in Cybersecurity</h3>
+
+</div>
+
+<div class="card">
+
+<h3>Microsoft Azure Fundamentals</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Hack The Box Academy</h3>
+
+<p>
+
+Windows Event Logs • SIEM Fundamentals •
+Incident Reporting • Network Traffic Analysis
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Digital Forensics</h3>
+
+<p>
+
+Velociraptor investigations, Windows artifacts,
+memory analysis and threat hunting.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Detection Engineering</h3>
+
+<p>
+
+YARA • Sigma • Suricata
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Let's Connect</h2>
+
+<p>Email: your@email.com</p>
+
+<p>
+
+GitHub |
+LinkedIn |
+Hack The Box
+
+</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Ahmed Muhumed
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
