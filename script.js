@@ -29,70 +29,77 @@ const achievements = [
     title: "AD Security Captain",
     module: "Windows Attacks & Defense",
     image: "images/WindowsAttacks.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/1d99c9a4-735e-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "Panoptic",
     module: "Incident Handling Process",
     image: "images/IncidentHandling.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/5f2f8ffc-ea2f-11ef-864f-bea50ffe6cb4"
 },
 
 {
     title: "Anticipate the Next Attack",
     module: "Security Monitoring & SIEM",
     image: "images/SecurityMonitoring.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/2d837b42-6256-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "Predict the Next Move",
-    module: "Threat Hunting",
+    module: "Introduction to Threat Hunting & Hunting With Elastic",
     image: "images/ThreatHunting.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/e35b4222-660c-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "Log Keeper",
     module: "Windows Event Logs & Finding Evil",
     image: "images/WindowsEvent.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/d70eef37-65ad-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "SPL Witchcraft",
-    module: "Understanding Log Sources & Splunk",
+    module: "Understanding Log Sources & Investigating with Splunk",
     image: "images/SplunkModule.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/0e4e3668-686d-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "Digital Forensics",
     module: "Digital Forensics",
     image: "images/DigitalForensics.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/78e833be-8d35-11f1-82d1-bea50ffe6cb4"
 },
 
 {
     title: "Chronicle Champion",
     module: "Security Incident Reporting",
     image: "images/SecurityIncidentReporting.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/26ba4c49-808c-11f1-82d1-bea50ffe6cb4"
 },
 
 {
-    title: "Detection Engineering",
+    title: "Flare guardian",
     module: "YARA & Sigma",
     image: "images/YARA&Sigma.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/f5f3fec9-8af8-11f1-82d1-bea50ffe6cb4"
 },
 
 {
-    title: "IDS / IPS",
-    module: "IDS & IPS Fundamentals",
+    title: "Packet carver",
+    module: "Working with IDS/IPS ",
     image: "images/IDS:IPSmodule.png",
-    link: "#"
+    link: "https://academy.hackthebox.com/achievement/badge/ed9da4a4-86c3-11f1-82d1-bea50ffe6cb4"
+},
+
+{
+    title: "The packet protector",
+    module: "Intermediate Network Traffic Analysis ",
+    image: "images/NetworkTrafficAnalysis.png",
+    link: "https://academy.hackthebox.com/achievement/badge/a49febae-8088-11f1-82d1-bea50ffe6cb4"
 }
 
 ];
