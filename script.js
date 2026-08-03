@@ -97,60 +97,56 @@ const container = document.getElementById("achievement-container");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 
-function renderCards(){
+function renderCards() {
 
     container.innerHTML = "";
 
-    achievements
-        .slice(currentIndex, currentIndex + visibleCards)
-        .forEach(item => {
+    const cards = achievements.slice(currentIndex, currentIndex + visibleCards);
 
-            container.innerHTML += `
-                <div class="achievement-card">
+    cards.forEach(item => {
 
-                    <img src="${item.image}" alt="${item.title}">
+        container.innerHTML += `
+            <div class="achievement-card">
+                <img src="${item.image}" alt="${item.title}">
+                <h3>${item.title}</h3>
+                <p>${item.module}</p>
+                <a href="${item.link}" target="_blank">View Badge</a>
+            </div>
+        `;
 
-                    <h3>${item.title}</h3>
+    });
 
-                    <p>${item.module}</p>
-
-                    <a href="${item.link}" target="_blank">
-                        View Badge
-                    </a>
-
-                </div>
-            `;
-
-        });
-
+}
     prevBtn.disabled = currentIndex === 0;
 
     nextBtn.disabled = currentIndex + visibleCards >= achievements.length;
 
 }
 
-nextBtn.addEventListener("click", () => {
+document.getElementById("next").addEventListener("click", () => {
 
-    if(currentIndex + visibleCards < achievements.length){
+    currentIndex += visibleCards;
 
-        currentIndex += visibleCards;
-
-        renderCards();
-
+    if (currentIndex >= achievements.length) {
+        currentIndex = 0; // Back to first page
     }
+
+    renderCards();
 
 });
 
-prevBtn.addEventListener("click", () => {
+document.getElementById("prev").addEventListener("click", () => {
 
-    if(currentIndex > 0){
+    currentIndex -= visibleCards;
 
-        currentIndex -= visibleCards;
+    if (currentIndex < 0) {
 
-        renderCards();
+        // Go to the last page automatically
+        currentIndex = Math.floor((achievements.length - 1) / visibleCards) * visibleCards;
 
     }
 
-});
+    renderCards();
 
-renderCards();
+});
+//renderCards();
