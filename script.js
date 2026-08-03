@@ -1,3 +1,42 @@
+// =============================
+// HTB ACHIEVEMENTS
+// =============================
+
+const achievements = [
+
+{
+    title: "Log Keeper",
+    module: "Windows Event Logs & Finding Evil",
+    image: "images/logkeeper.png",
+    link: "https://academy.hackthebox.com/..."
+},
+
+{
+    title: "Chronicle Champion",
+    module: "Security Incident Reporting",
+    image: "images/chroniclechampion.png",
+    link: "https://academy.hackthebox.com/..."
+},
+
+{
+    title: "Network Traffic Analysis",
+    module: "Network Traffic Analysis",
+    image: "images/networktrafficanalysis.png",
+    link: "https://academy.hackthebox.com/..."
+},
+
+{
+    title: "Security Monitoring",
+    module: "Security Monitoring & SIEM Fundamentals",
+    image: "images/securitymonitoring.png",
+    link: "https://academy.hackthebox.com/..."
+}
+
+];
+
+
+
+
 let currentIndex = 0;
 
 const visibleCards = 3;
