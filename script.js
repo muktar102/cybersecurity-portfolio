@@ -21,7 +21,7 @@ const achievements = [
 {
     title: "Your white belt training begins",
     module: "Introduction to Active Directory",
-    image: "images/ActiveDirectoryy.png",
+    image: "images/ActiveDirectory.png",
     link: "https://academy.hackthebox.com/achievement/badge/c9f7c384-69fb-11f1-82d1-bea50ffe6cb4"
 },
 
@@ -98,7 +98,7 @@ const achievements = [
 {
     title: "The packet protector",
     module: "Intermediate Network Traffic Analysis ",
-    image: "images/NetworkTrafficAnalysis.png",
+    image: "images/IntermediateNetworkTraffic.png",
     link: "https://academy.hackthebox.com/achievement/badge/a49febae-8088-11f1-82d1-bea50ffe6cb4"
 }
 
