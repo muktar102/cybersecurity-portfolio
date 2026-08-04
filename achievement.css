@@ -186,3 +186,21 @@
     }
 
 }
+@media (max-width:768px){
+
+#achievement-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.achievement-card{
+    width:100%;
+    min-height:260px;
+    padding:18px;
+}
+
+.achievement-card img{
+    width:75px;
+}
+
+}
