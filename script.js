@@ -240,7 +240,16 @@ renderCards(); */
 let currentPage = 0;
 
 function getBadgesPerPage() {
-    return window.innerWidth <= 768 ? 4 : 10;
+
+    if (window.innerWidth <= 767) {
+        return 1;   // Mobile
+    }
+
+    if (window.innerWidth <= 1023) {
+        return 4;   // iPad / Tablet
+    }
+
+    return 10;      // Desktop
 }
 
 const container = document.getElementById("achievement-container");
@@ -312,3 +321,26 @@ window.addEventListener("resize", () => {
 
 // Initial Load
 renderCards();
+
+
+
+
+
+// ===============================
+// Mobile Navbar
+// ===============================
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+        menuToggle.innerHTML = "&times;";   // X when open
+    } else {
+        menuToggle.textContent = "☰";   // Hamburger when closed
+    }
+
+});
