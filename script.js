@@ -108,7 +108,7 @@ const achievements = [
 // Settings
 // ===============================
 
-const visibleCards = 10;
+/* const visibleCards = 10;
 let currentIndex = 0;
 
 const container = document.getElementById("achievement-container");
@@ -178,5 +178,57 @@ prevBtn.addEventListener("click", () => {
 // ===============================
 // Initial Load
 // ===============================
+
+renderCards(); */
+const badgesPerPage = 10;
+let currentPage = 0;
+
+const container = document.getElementById("achievement-container");
+
+function renderCards() {
+
+    container.innerHTML = "";
+
+    const start = currentPage * badgesPerPage;
+    const end = Math.min(start + badgesPerPage, achievements.length);
+
+    for (let i = start; i < end; i++) {
+
+        const item = achievements[i];
+
+        container.innerHTML += `
+            <div class="achievement-card">
+                <img src="${item.image}" alt="${item.title}">
+                <h4>${item.title}</h4>
+                <p>${item.module}</p>
+                <a href="${item.link}" target="_blank">View Badge</a>
+            </div>
+        `;
+    }
+
+    // Disable buttons when needed
+    document.getElementById("prev").disabled = currentPage === 0;
+
+    document.getElementById("next").disabled =
+        end >= achievements.length;
+}
+
+document.getElementById("next").addEventListener("click", () => {
+
+    if ((currentPage + 1) * badgesPerPage < achievements.length) {
+        currentPage++;
+        renderCards();
+    }
+
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+
+    if (currentPage > 0) {
+        currentPage--;
+        renderCards();
+    }
+
+});
 
 renderCards();
