@@ -62,7 +62,7 @@ const achievements = [
 
 {
     title: "SPL Witchcraft",
-    module: "Understanding Log Sources & Investigating with Splunk",
+    module: "Log Sources & Investigating with Splunk",
     image: "images/SplunkModule.png",
     link: "https://academy.hackthebox.com/achievement/badge/0e4e3668-686d-11f1-82d1-bea50ffe6cb4"
 },
