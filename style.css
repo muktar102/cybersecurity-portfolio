@@ -7,8 +7,8 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#9AF33B;
-color:#0b1117;
+background:#0d1117;
+color:#fff;
 line-height:1.7;
 }
 
@@ -87,7 +87,7 @@ flex-wrap:wrap;
 
 .btn{
 
-background:#9AF33B;
+background:red;
 
 color:black;
 
