@@ -180,7 +180,7 @@ prevBtn.addEventListener("click", () => {
 // ===============================
 
 renderCards(); */
-const badgesPerPage = 10;
+/*const badgesPerPage = 10;
 let currentPage = 0;
 
 const container = document.getElementById("achievement-container");
@@ -231,4 +231,84 @@ document.getElementById("prev").addEventListener("click", () => {
 
 });
 
+renderCards(); */
+
+// ===============================
+// Achievements Slider
+// ===============================
+
+let currentPage = 0;
+
+function getBadgesPerPage() {
+    return window.innerWidth <= 768 ? 4 : 10;
+}
+
+const container = document.getElementById("achievement-container");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
+
+function renderCards() {
+
+    const badgesPerPage = getBadgesPerPage();
+
+    container.innerHTML = "";
+
+    const start = currentPage * badgesPerPage;
+    const end = Math.min(start + badgesPerPage, achievements.length);
+
+    for (let i = start; i < end; i++) {
+
+        const item = achievements[i];
+
+        container.innerHTML += `
+            <div class="achievement-card">
+
+                <img src="${item.image}" alt="${item.title}">
+
+                <p>${item.title}</p>
+
+                <h4>${item.module}</h4>
+
+                <a href="${item.link}" target="_blank">
+                    View Badge
+                </a>
+
+            </div>
+        `;
+    }
+
+    // Button states
+    prevBtn.disabled = currentPage === 0;
+    nextBtn.disabled = end >= achievements.length;
+}
+
+// Next Page
+nextBtn.addEventListener("click", () => {
+
+    const badgesPerPage = getBadgesPerPage();
+
+    if ((currentPage + 1) * badgesPerPage < achievements.length) {
+        currentPage++;
+        renderCards();
+    }
+
+});
+
+// Previous Page
+prevBtn.addEventListener("click", () => {
+
+    if (currentPage > 0) {
+        currentPage--;
+        renderCards();
+    }
+
+});
+
+// Reset layout when screen size changes
+window.addEventListener("resize", () => {
+    currentPage = 0;
+    renderCards();
+});
+
+// Initial Load
 renderCards();
