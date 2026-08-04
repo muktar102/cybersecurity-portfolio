@@ -199,8 +199,8 @@ function renderCards() {
         container.innerHTML += `
             <div class="achievement-card">
                 <img src="${item.image}" alt="${item.title}">
-                <h4>${item.title}</h4>
-                <p>${item.module}</p>
+                <p>${item.title}</p>
+                <h4>${item.module}</h4>
                 <a href="${item.link}" target="_blank">View Badge</a>
             </div>
         `;
