@@ -35,9 +35,19 @@ nav{
 }
 
 .logo{
-    font-size:30px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:28px;
     font-weight:700;
     color:#00ff88;
+}
+
+.logo img{
+    width:42px;
+    height:42px;
+    object-fit:contain;
 }
 
 #nav-links{
@@ -464,6 +474,14 @@ font-size:18px;
     #nav-links.active{
         display:flex;
     }
+ .logo{
+        font-size:24px;
+        gap:10px;
+    }
 
+    .logo img{
+        width:34px;
+        height:34px;
+    }
     
 }
