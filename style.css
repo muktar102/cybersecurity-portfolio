@@ -27,7 +27,7 @@ nav{
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 8%;
+    padding:18px 40px;    
 
     background:#161B22;
 
@@ -37,17 +37,17 @@ nav{
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
-
+    gap:7px;
     font-size:28px;
     font-weight:700;
     color:#00ff88;
 }
 
 .logo img{
-    width:42px;
-    height:42px;
+    width:90px;
+    height:90px;
     object-fit:contain;
+    
 }
 
 #nav-links{
@@ -173,7 +173,7 @@ color:black;
 
 section{
 
-padding:80px 10%;
+padding:35px 6%;
 
 }
 

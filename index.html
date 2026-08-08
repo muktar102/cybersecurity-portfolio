@@ -10,8 +10,12 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="achievement.css">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="contact.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -22,7 +26,7 @@
 <nav>
 
     <div class="logo">
-    <img src="images/mylogo.png" alt="AM Logo">
+
     <span>Ahmed Muhumed</span>
     </div>
 
@@ -45,13 +49,13 @@
 
 <div class="hero-content">
 
-<h1>Hello, I'm m Ahmed Muhumed</h1>
+<h1>Hello, I'm Ahmed Muhumed</h1>
 
 <h2>Cybersecurity Analyst</h2>
 
 <p>
 
-Network Security • IT Support • SOC • Digital Forensics
+Network Security Analyst  |  Security Operations  |  IT Support Specialist
 
 </p>
 
@@ -96,59 +100,60 @@ security labs, and real-world cybersecurity projects.
 
 <div class="card">
 
-<h3>Security</h3>
+<h3>Security Operations </h3>
 
 <ul>
-
+<li>SIEM (Splunk Enterprise)</li>
 <li>Threat Hunting</li>
-
 <li>Incident Response</li>
-
 <li>Digital Forensics</li>
-
-<li>SIEM</li>
-
+<li>Log Analysis</li>
+<li>Malware Analysis</li>
+<li>Vulnerability Assessment</li>
+<li>CVSS and CVEs</li>
+<li>MITRE ATT&CK Framework</li>
+<li>Endpoint Detection & Response (EDR)</li>
+<li>NIST Cybersecurity Framework</li>
 </ul>
-
 </div>
 
 <div class="card">
 
-<h3>Networking</h3>
+<h3>Networking and Systems</h3>
 
 <ul>
 
 <li>TCP/IP</li>
-
-<li>DNS</li>
-
-<li>DHCP</li>
-
+<li>DNS & DHCP</li>
+<li>Network Traffic Analysis</li>
 <li>VPN</li>
-
-<li>Routing</li>
-
+<li>Routing & Switching</li>
+<li>Linux</li>
+<li>VPN</li>
+<li>Firewalls</li>
+<li>IDS/IPS</li>
+<li>Zeek</li>
 </ul>
 
 </div>
 
 <div class="card">
 
-<h3>Tools</h3>
+<h3>Tools & Technologies</h3>
 
 <ul>
 
 <li>Splunk</li>
-
 <li>Wireshark</li>
-
-<li>Velociraptor</li>
-
-<li>YARA</li>
-
+<li>OpenVAS</li>
+<li>YARA and Sigma</li>
 <li>Sigma</li>
-
 <li>Suricata</li>
+<li>Microsoft Azure</li>
+<li>Microsoft Defender</li>
+<li>PowerShell</li>
+<li>Bash</li>
+<li>python</li>
 
 </ul>
 
@@ -210,59 +215,290 @@ Verify Credential
 </div>
 </section>
 
-  
+  <!-- ================= Projects ================= -->
 <section id="projects">
+ <div class="projects">
+    <h2 class="section-title">Projects</h2>
 
-<h2>Featured Projects</h2>
+    <div class="projects-container">
 
-<div class="cards">
+<div class="project-card">
 
-<div class="card">
+    <!-- Image -->
 
-<h3>Hack The Box Academy</h3>
+    <div class="project-image">
 
-<p>
+        <img src="images/SplunkEnterprise.png" alt="Splunk SIEM">
 
-Windows Event Logs • SIEM Fundamentals •
-Incident Reporting • Network Traffic Analysis
+    </div>
 
-</p>
+    <!-- Content -->
+
+    <div class="project-content">
+
+        <div class="project-info">
+            <div class="project-text">
+
+                <h4>Splunk SIEM Home Lab</h4>
+
+                <p>
+                    Built a SIEM lab to collect, analyze and investigate Windows
+                    security events using Splunk Enterprise.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tags -->
+
+        <div class="project-tags">
+
+            <span><i class="fa-solid fa-terminal"></i> Splunk</span>
+
+            <span><i class="fa-brands fa-windows"></i> Windows</span>
+
+            <span><i class="fa-solid fa-gear"></i> Sysmon</span>
+
+        </div>
+
+
+        <!-- Divider -->
+
+        <div class="project-divider"></div>
+
+
+        <!-- Button -->
+
+        <a href="https://github.com/muktar102/splunk-siem-soc-lab" class="github-btn">
+
+            <div>
+
+                <i class="fa-brands fa-github"></i>
+
+                View on GitHub
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right-long"></i>
+
+        </a>
+
+    </div>
+
+</div>
+<div class="project-card">
+
+    <!-- Image -->
+
+    <div class="project-image">
+
+        <img src="images/OpenvasV.png" alt="vulnerability">
+
+    </div>
+
+    <!-- Content -->
+
+    <div class="project-content">
+
+        <div class="project-info">
+
+            <div class="project-text">
+
+                <h4>OpenVAS Vulnerability Assessment</h4>
+
+                <p>
+                    Performed vulnerability assessments 
+                    using OpenVAS to identify security risks, analyze CVEs, and recommend remediation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tags -->
+
+        <div class="project-tags">
+
+            <span><i class="fa-solid fa-shield-halved"></i>OpenVAS</span>
+            <span><i class="fa-brands fa-linux"></i> Kali Linux</span>
+             <span><i class="fa-solid fa-gauge-high"></i> CVSS</span>
+             <span> <i class="fa-solid fa-bug"></i>CVEs</span>
+        </div>
+
+
+        <!-- Divider -->
+
+        <div class="project-divider"></div>
+
+
+        <!-- Button -->
+
+        <a href="https://github.com/muktar102/Vulnerability-Management-and-Threat-Exposure-Analysis" class="github-btn">
+
+            <div>
+
+                <i class="fa-brands fa-github"></i>
+
+                View on GitHub
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right-long"></i>
+
+        </a>
+
+    </div>
+
+</div>
+<div class="project-card">
+
+    <!-- Image -->
+
+    <div class="project-image">
+
+        <img src="images/malware.png" alt="malware">
+
+    </div>
+
+    <!-- Content -->
+
+    <div class="project-content">
+
+        <div class="project-info">
+            <div class="project-text">
+
+                <h4>Malware Analysis Lab</h4>
+
+                <p>
+                    Analyzed suspicious malware samples in a secure virtual environment
+                    to identify malicious behavior, extract indicators of compromise (IOCs), and understand attack techniques.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tags -->
+
+        <div class="project-tags">
+
+            <span><i class="fa-solid fa-microchip ghidra"></i> Ghidra</span>
+
+            <span><i class="fa-solid fa-file-code pestudio"></i> PE Studio</span>
+
+            <span><i class="fa-solid fa-shield-virus yara"></i> YARA</span>
+
+            <span><i class="fa-solid fa-virus virustotal"></i> VirusTotal</span>
+
+        </div>
+
+
+        <!-- Divider -->
+
+        <div class="project-divider"></div>
+
+
+        <!-- Button -->
+
+        <a href="https://github.com/muktar102/Phishing-Email-and-Malware-Analysis-Sandbox-" class="github-btn">
+
+            <div>
+
+                <i class="fa-brands fa-github"></i>
+
+                View on GitHub
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right-long"></i>
+
+        </a>
+
+    </div>
+
+</div>
+<div class="project-card">
+
+    <!-- Image -->
+
+    <div class="project-image">
+
+        <img src="images/threat.png" alt="Splunk SIEM">
+
+    </div>
+
+    <!-- Content -->
+
+    <div class="project-content">
+
+        <div class="project-info">
+
+            <div class="project-text">
+
+                <h4>Threat Intelligence Report</h4>
+
+                <p>
+                    Conducted in-depth threat intelligence research on APT41 (Wicked Panda), analyzing adversary tactics, techniques, and procedures (TTPs), MITRE ATT&CK mappings,
+                    indicators of compromise (IOCs), malware, and defensive recommendations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tags -->
+
+        <div class="project-tags">
+
+            <span> <i class="fa-solid fa-crosshairs mitre"></i> MITRE ATT&CK</span>
+            <span><i class="fa-solid fa-brain threat"></i>Threat Intelligence</span>
+            <span><i class="fa-solid fa-globe osint"></i>OSINT</span>
+            <span><i class="fa-solid fa-bug malwarebazaar"></i>MalwareBazaar</span>
+
+        </div>
+
+
+        <!-- Divider -->
+
+        <div class="project-divider"></div>
+
+
+        <!-- Button -->
+
+        <a href="https://github.com/muktar102/Deep-Research-on-Threat-Intelligence-and-APTs" class="github-btn">
+
+            <div>
+
+                <i class="fa-brands fa-github"></i>
+
+                View on GitHub
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right-long"></i>
+
+        </a>
+
+    </div>
 
 </div>
 
-<div class="card">
-
-<h3>Digital Forensics</h3>
-
-<p>
-
-Velociraptor investigations, Windows artifacts,
-memory analysis and threat hunting.
-
-</p>
-
+   </div>
 </div>
-
-<div class="card">
-
-<h3>Detection Engineering</h3>
-
-<p>
-
-YARA • Sigma • Suricata
-
-</p>
-
-</div>
-
-</div>
-
 </section>
 
+                
 
 <section id="achievements">
 
-    <h2>Hack The Box Achievements</h2>
+    <h2>
+    Hack The Box<span style="color:#ffffff"> Achievements</span> 
+    </h2>
 
     <div class="achievement-wrapper">
 
@@ -281,15 +517,17 @@ YARA • Sigma • Suricata
 <section id="contact">
 
 <h2>Let's Connect</h2>
-
-<p>Email: your@email.com</p>
-
 <p>
 
-GitHub |
-LinkedIn |
-Hack The Box
+ <a href="https://www.linkedin.com/in/ahmed-muhumed-189b46217/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+        </a>
 
+ <a href="https://github.com/muktar102" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
 </p>
 
 </section>
